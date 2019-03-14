@@ -13,7 +13,11 @@ int 0x10 ; L is already in al
 mov al,'O'
 int 0x10
 
+mov al, my_string
+int 0x10
 
+my_string:
+    db 'Booting OS',0
 
 jmp $; jmp to current address inf loop
 
